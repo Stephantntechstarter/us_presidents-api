@@ -1,0 +1,333 @@
+{
+  "presidents": [
+    {
+      "number": 1,
+      "name": "George Washington",
+      "term_start": "1789",
+      "term_end": "1797",
+      "party": "None/Unaffiliated"
+    },
+    {
+      "number": 2,
+      "name": "John Adams",
+      "term_start": "1797",
+      "term_end": "1801",
+      "party": "Federalist"
+    },
+    {
+      "number": 3,
+      "name": "Thomas Jefferson",
+      "term_start": "1801",
+      "term_end": "1809",
+      "party": "Democratic-Republican"
+    },
+    {
+      "number": 4,
+      "name": "James Madison",
+      "term_start": "1809",
+      "term_end": "1817",
+      "party": "Democratic-Republican"
+    },
+    {
+      "number": 5,
+      "name": "James Monroe",
+      "term_start": "1817",
+      "term_end": "1825",
+      "party": "Democratic-Republican"
+    },
+    {
+      "number": 6,
+      "name": "John Quincy Adams",
+      "term_start": "1825",
+      "term_end": "1829",
+      "party": "Democratic-Republican"
+    },
+    {
+      "number": 7,
+      "name": "Andrew Jackson",
+      "term_start": "1829",
+      "term_end": "1837",
+      "party": "Democratic"
+    },
+    {
+      "number": 8,
+      "name": "Martin Van Buren",
+      "term_start": "1837",
+      "term_end": "1841",
+      "party": "Democratic"
+    },
+    {
+      "number": 9,
+      "name": "William Henry Harrison",
+      "term_start": "1841",
+      "term_end": "1841",
+      "party": "Whig"
+    },
+    {
+      "number": 10,
+      "name": "John Tyler",
+      "term_start": "1841",
+      "term_end": "1845",
+      "party": "Whig/None"
+    },
+    {
+      "number": 11,
+      "name": "James K. Polk",
+      "term_start": "1845",
+      "term_end": "1849",
+      "party": "Democratic"
+    },
+    {
+      "number": 12,
+      "name": "Zachary Taylor",
+      "term_start": "1849",
+      "term_end": "1850",
+      "party": "Whig"
+    },
+    {
+      "number": 13,
+      "name": "Millard Fillmore",
+      "term_start": "1850",
+      "term_end": "1853",
+      "party": "Whig"
+    },
+    {
+      "number": 14,
+      "name": "Franklin Pierce",
+      "term_start": "1853",
+      "term_end": "1857",
+      "party": "Democratic"
+    },
+    {
+      "number": 15,
+      "name": "James Buchanan",
+      "term_start": "1857",
+      "term_end": "1861",
+      "party": "Democratic"
+    },
+    {
+      "number": 16,
+      "name": "Abraham Lincoln",
+      "term_start": "1861",
+      "term_end": "1865",
+      "party": "Republican"
+    },
+    {
+      "number": 17,
+      "name": "Andrew Johnson",
+      "term_start": "1865",
+      "term_end": "1869",
+      "party": "National Union"
+    },
+    {
+      "number": 18,
+      "name": "Ulysses S. Grant",
+      "term_start": "1869",
+      "term_end": "1877",
+      "party": "Republican"
+    },
+    {
+      "number": 19,
+      "name": "Rutherford B. Hayes",
+      "term_start": "1877",
+      "term_end": "1881",
+      "party": "Republican"
+    },
+    {
+      "number": 20,
+      "name": "James A. Garfield",
+      "term_start": "1881",
+      "term_end": "1881",
+      "party": "Republican"
+    },
+    {
+      "number": 21,
+      "name": "Chester A. Arthur",
+      "term_start": "1881",
+      "term_end": "1885",
+      "party": "Republican"
+    },
+    {
+      "number": 22,
+      "name": "Grover Cleveland",
+      "term_start": "1885",
+      "term_end": "1889",
+      "party": "Democratic"
+    },
+    {
+      "number": 23,
+      "name": "Benjamin Harrison",
+      "term_start": "1889",
+      "term_end": "1893",
+      "party": "Republican"
+    },
+    {
+      "number": 24,
+      "name": "Grover Cleveland",
+      "term_start": "1893",
+      "term_end": "1897",
+      "party": "Democratic"
+    },
+    {
+      "number": 25,
+      "name": "William McKinley",
+      "term_start": "1897",
+      "term_end": "1901",
+      "party": "Republican"
+    },
+    {
+      "number": 26,
+      "name": "Theodore Roosevelt",
+      "term_start": "1901",
+      "term_end": "1909",
+      "party": "Republican"
+    },
+    {
+      "number": 27,
+      "name": "William Howard Taft",
+      "term_start": "1909",
+      "term_end": "1913",
+      "party": "Republican"
+    },
+    {
+      "number": 28,
+      "name": "Woodrow Wilson",
+      "term_start": "1913",
+      "term_end": "1921",
+      "party": "Democratic"
+    },
+    {
+      "number": 29,
+      "name": "Warren G. Harding",
+      "term_start": "1921",
+      "term_end": "1923",
+      "party": "Republican"
+    },
+    {
+      "number": 30,
+      "name": "Calvin Coolidge",
+      "term_start": "1923",
+      "term_end": "1929",
+      "party": "Republican"
+    },
+    {
+      "number": 31,
+      "name": "Herbert Hoover",
+      "term_start": "1929",
+      "term_end": "1933",
+      "party": "Republican"
+    },
+    {
+      "number": 32,
+      "name": "Franklin D. Roosevelt",
+      "term_start": "1933",
+      "term_end": "1945",
+      "party": "Democratic"
+    },
+    {
+      "number": 33,
+      "name": "Harry S. Truman",
+      "term_start": "1945",
+      "term_end": "1953",
+      "party": "Democratic"
+    },
+    {
+      "number": 34,
+      "name": "Dwight D. Eisenhower",
+      "term_start": "1953",
+      "term_end": "1961",
+      "party": "Republican"
+    },
+    {
+      "number": 35,
+      "name": "John F. Kennedy",
+      "term_start": "1961",
+      "term_end": "1963",
+      "party": "Democratic"
+    },
+    {
+      "number": 36,
+      "name": "Lyndon B. Johnson",
+      "term_start": "1963",
+      "term_end": "1969",
+      "party": "Democratic"
+    },
+    {
+      "number": 37,
+      "name": "Richard Nixon",
+      "term_start": "1969",
+      "term_end": "1974",
+      "party": "Republican"
+    },
+    {
+      "number": 38,
+      "name": "Gerald Ford",
+      "term_start": "1974",
+      "term_end": "1977",
+      "party": "Republican"
+    },
+    {
+      "number": 39,
+      "name": "Jimmy Carter",
+      "term_start": "1977",
+      "term_end": "1981",
+      "party": "Democratic"
+    },
+    {
+      "number": 40,
+      "name": "Ronald Reagan",
+      "term_start": "1981",
+      "term_end": "1989",
+      "party": "Republican"
+    },
+    {
+      "number": 41,
+      "name": "George H. W. Bush",
+      "term_start": "1989",
+      "term_end": "1993",
+      "party": "Republican"
+    },
+    {
+      "number": 42,
+      "name": "Bill Clinton",
+      "term_start": "1993",
+      "term_end": "2001",
+      "party": "Democratic"
+    },
+    {
+      "number": 43,
+      "name": "George W. Bush",
+      "term_start": "2001",
+      "term_end": "2009",
+      "party": "Republican"
+    },
+    {
+      "number": 44,
+      "name": "Barack Obama",
+      "term_start": "2009",
+      "term_end": "2017",
+      "party": "Democratic"
+    },
+    {
+      "number": 45,
+      "name": "Donald Trump",
+      "term_start": "2017",
+      "term_end": "2021",
+      "party": "Republican"
+    },
+    {
+      "number": 46,
+      "name": "Joe Biden",
+      "term_start": "2021",
+      "term_end": "2025",
+      "party": "Democratic"
+    },
+    {
+      "number": 47,
+      "name": "Donald Trump",
+      "term_start": "2025",
+      "term_end": "present",
+      "party": "Republican"
+    }
+  ]
+}
