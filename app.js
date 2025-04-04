@@ -49,6 +49,8 @@ app.get("/presidents/:query", (req, res) => {
 
 app.get("/presidents/term/:year", (req, res) => {
   const year = parseInt(req.params.year);
+  const currentYear = new Date().getFullYear();
+
   if (isNaN(year) || req.params.year.length !== 4) {
     return res.status(400).json(
       createError(400, "Ungültiges Jahr", {
@@ -58,9 +60,19 @@ app.get("/presidents/term/:year", (req, res) => {
     );
   }
 
-  const presidents = getPresidents().filter(p =>
-    p.term_start <= year && (p.term_end >= year || p.term_end === "present")
-  );
+  if (year > currentYear) {
+    return res.status(400).json(
+      createError(400, 'Jahr liegt in der Zukunft', {
+        received: year,
+        maxYear: currentYear
+      })
+    );
+  }
+
+  const presidents = getPresidents().filter(p => {
+    const endYear = p.term_end === 'present' ? currentYear : p.term_end;
+    return p.term_start <= year && endYear >= year;
+  });
 
   res.json(presidents);
 });
@@ -70,7 +82,7 @@ app.use((err, req, res, next) => {
   console.error(err.stack);
   res.status(500).json(
     createError(500, "Interner Serverfehler", {
-      requestId: req.id, // Falls du Request-IDs verwendest
+      requestId: req.id,
       endpoint: req.originalUrl
     })
   );

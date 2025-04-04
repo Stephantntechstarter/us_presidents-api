@@ -31,7 +31,6 @@ const findPresident = (query) => {
 const filterPresidents = (filters, page = 1, limit = 10, sort = "number", order = "asc") => {
   let presidents = getPresidents();
 
-  // Volltextsuche
   if (filters.search) {
     const searchTerm = filters.search.toLowerCase();
     presidents = presidents.filter(p =>
@@ -42,29 +41,44 @@ const filterPresidents = (filters, page = 1, limit = 10, sort = "number", order 
     delete filters.search;
   }
 
-  // Filterlogik
   presidents = presidents.filter(president => {
     return Object.keys(filters).every(key => {
       const value = filters[key];
       if (key === "name") return president.name.toLowerCase().includes(value.toLowerCase());
       if (key === "term_start" || key === "term_end") return president[key] === value;
       if (key === "number") return president.number.toString() === value;
-      if (key === "after_year") return president.term_start >= value;
-      if (key === "before_year") return president.term_end <= value || president.term_end === "present";
+      if (key === "before_year") {
+        const endYear = president.term_end === 'present'
+          ? new Date().getFullYear()
+          : parseInt(president.term_end);
+        return endYear <= parseInt(value)
+      }
+
+      if (key === "after_year") {
+        const endYear = president.term_end === 'present'
+          ? new Date().getFullYear()
+          : parseInt(president.term_end);
+        return president.term_start >= parseInt(value) || endYear >= parseInt(value);
+      }
+
       if (key === "party") return president.party.toLowerCase() === value.toLowerCase();
       return true;
     });
   });
 
-  // Sortierung
   presidents.sort((a, b) => {
-    const valA = a[sort];
-    const valB = b[sort];
+    const getEndYear = (p) => {
+      if (p.term_end === 'present') return 9999;
+      return parseInt(p.term_end);
+    };
+
+    const valA = sort === 'term_end' ? getEndYear(a) : a[sort];
+    const valB = sort === 'term_end' ? getEndYear(b) : b[sort];
+
     if (order === "asc") return valA > valB ? 1 : -1;
     else return valA < valB ? 1 : -1;
   });
 
-  // Paginierung
   const startIndex = (page - 1) * limit;
   const endIndex = page * limit;
 
