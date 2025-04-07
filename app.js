@@ -93,6 +93,7 @@ app.use((req, res, next) => {
 
 app.use((err, req, res, next) => {
   console.error(`[${req.id}] Fehler:`, err.stack);
+
   const status = err.error?.status || 500;
   const message = err.error?.message || "Interner Serverfehler";
   const details = {
@@ -100,14 +101,9 @@ app.use((err, req, res, next) => {
     requestId: req.id
   };
 
-  res.status(status).json({
-    error: {
-      status,
-      message,
-      details,
-      timestamp: new Date().toISOString()
-    }
-  });
+  const errorResponse = createError(status, message, details);
+
+  res.status(status).json(errorResponse);
 });
 
 module.exports = app;
